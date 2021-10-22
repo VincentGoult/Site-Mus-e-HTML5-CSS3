@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width = device-width, initiale-scale = 1" />
+	<link rel="stylesheet" href="reserve.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	<title>Reserver</title>
+</head>
+
+<body>
+
+    <!--Acceuil-->
+    <section id="banner">
+        <a href="Acceuil_Version_3.html"><img src="Logo2.png" class="logo" /></a>
+        <div class="banner-text">
+            <h1>Reserver</h1>
+        </div>
+    </section>
+	
+    <section id="information"><br><br/>
+	<div class="title-text">
+            <p>RESERVE DES MAINTENANT</p>
+            <h1>Les Tarifs et les reservation</h1>
+        </div>
+
+        <table>
+  	   <tr>
+    	   <th></th>
+           <th>Tarifs</th>
+  	   </tr>
+  	   <tr>
+   	   <td>Enfants (5-12ans)</td>
+           <td>2€</td>
+  	   </tr>
+  	   <tr>
+    	   <td>Etudiant</td>
+    	   <td>4€</td>
+  	   </tr>
+  	   <tr>
+    	   <td>Adultes</td>
+    	   <td>7€</td>
+  	   </tr>
+	   </table><br></br>
+
+	<form>
+
+	  <p>Merci de choisir votre lieu de visite (multiple choix/visite sont possible), les Tarifs pour tout les visite sont meme.</p><br/>
+	  <input type="checkbox">
+          <label id="fname">Galerie de paléontologie</label><br/>
+
+	  <input type="checkbox">
+	  <label id="fname">Les jardins des plantes</label><br/>
+
+          <input type="checkbox">
+	  <label id="fname">Parc zoologique</label><br/>
+
+          <input type="checkbox">
+          <label id="fname">Musée de l'Homme</label><br><br/>
+    
+	  <label id="fname">Saisir le nombre d'enfant</label>
+   	  <input type="text"><br><br/>
+
+	  <p>Attention!! Vous devez munir d'une justificatif de votre vie étudiant sinon vous n'aurez pas l'access.</p>
+	  <label id="fname">Saisir le nombre d'étudiant</label>
+   	  <input type="text"><br><br/>
+      
+  	  <label id="fname">Saisir le nombre d'adulte</label>
+  	  <input type="text"><br><br/> 
+      
+          <label id="fname">Saisir la date de la visite</label>
+  	  <input type="date"><br><br/>
+      
+          <p>Attention!! l'heure doit etre entre 8h à 17h30</p>
+	  <label id="fname">Saisir l'heure de la viste</label>
+  	  <input type="time"><br><br/>
+      
+          <input type="submit" id="valider" value="Valider"><br/><br/><br/>
+      
+	</form>
+
+	<section id="footer">
+
+        <img src="Logo2.jpg"  class="footer-img"/>
+
+        <div class="title-text">
+            <p>CONTACTS</p>
+            <h1>Visitez-Nous Dès Aujourd'hui !</h1>
+        </div>
+
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Horaires d'Ouvertures</h1>
+                <p><i class="fa fa-clock-o"></i>Tous Les Jours - 8h à 17h30</p>
+            </div>
+            <div class="footer-right">
+                <h1>Contactez-Nous</h1>
+                <p>Jardin des Plantes, 57 Rue Cuvier, 75005 Paris<i class="fa fa-map-marker"></i></p>
+                <p>01 40 79 30 00<i class="fa fa-phone"></i></p>
+                <p>Contactez-nous<i class="fa fa-paper-plane"></i></p>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/museumnationaldhistoirenaturelle"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/explore/locations/984932/museum-national-dhistoire-naturelle/"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/Le_Museum"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCyQuKkNt-Jiqw45eNfXWBXw"><i class="fa fa-youtube"></i></a>
+            <p>Copyrights  S1 Group Requin</p>
+        </div>
+
+    </section>
+	
+	    </section>
+
+    <script>
+
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "close.png"
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "menu.png"
+            }
+        }
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 100,
+            speedAsDuration: true
+        });
+
+    </script>
+ </body>
+</html>
+
